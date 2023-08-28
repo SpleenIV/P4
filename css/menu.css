@@ -1,0 +1,25 @@
+/************* MENU ****************/
+.bst {
+  width: 100%;
+}
+
+.cont-menu {
+  background-color: gray;
+  /* margin-top: -20px; */
+}
+
+.titre-prix {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=menu.css.map */

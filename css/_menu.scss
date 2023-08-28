@@ -1,0 +1,75 @@
+/************* MENU ****************/
+
+.bst {
+        width: 100%;
+}
+
+.cont-menu {
+    background-color: gray;
+    /* margin-top: -20px; */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-boutton  {
+    display: flex;
+    align-items: center;
+}
+
+.cont-anime {
+    /* display: flex; */
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    margin-bottom: 15px;
+    width: 90%;
+    height: 80px;
+
+    &:hover > .menu-anime {
+        width: 10%;
+        border-radius: 0px 15px 15px 0px;
+        
+
+        i.fa-solid.fa-circle-check {
+            font-size: 30px;
+            transform: rotate(0deg);
+        }
+    }
+}
+
+
+.titre-prix {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    align-items: end;
+}
+
+
+.menu-anime {
+    height: 100%;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    transform: translateX(0px);
+    transition: all 400ms;
+}
+
+i.fa-solid.fa-circle-check {
+    font-size: 0;
+    transform: rotate(360deg);
+    color: white;
+    transition: transform 400ms, font-size 0ms;
+}
