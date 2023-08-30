@@ -1,3 +1,9 @@
+.head-logo {
+    h1 {
+        padding: 15px;
+    }
+}
+    
 /****** BODY ************/
 
 .body p, i, h*{
@@ -48,20 +54,17 @@
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-
-
 .icon {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
     margin: auto;
-    
+    padding: 10px;
 }
 
 .location {
-    background-color: rgba(234, 234, 234, 1);
-    
+    background-color: rgb(234, 234, 234);
 }
 
 .cont-link {
@@ -70,6 +73,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 50px;
+    text-align: center;
+        span {
+            font-weight: 700;
+            height: 70px;
+        }
+
+        p {
+            height: 46px;
+        }
 }
 
 .a {
@@ -80,14 +93,14 @@
 
 .btn {
     border-radius: 30px;
-    width: 40%;
-    padding: 15px;
+    padding: 20px;
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     color: rgba(255, 255, 255, 1);
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    margin-top: 20px;
 }
 
 .cont-logo .fa-regular {
@@ -97,6 +110,7 @@
     cursor: pointer;
     padding: 1.85rem 3rem;
     transition: transform 400ms;
+
     &:hover {
         transition: 400ms; 
         -webkit-background-clip: text;
@@ -107,15 +121,46 @@
     }
 }
 
+i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store{
+    padding: 25px;
+    color: black;
+
+    i.fa-solid.fa-store {
+        color: rgba(147, 86, 220, 1);
+    }
+
+}
+
+.icon {
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
 
 /*********** FONCTION ************/
 
+.head-fonc{
+        color: black;
+        margin-bottom: 20%;
+        margin-top: 10%;
+
+        h2 {
+            padding: 14px;
+            color: rgba(0, 0, 0, 1);
+            font-weight: 700;
+        }
+}
+
 .fonction {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
 }
 
 .cont-fonc {
@@ -124,7 +169,7 @@
     border-radius: 30px;
     width: 90%;
     border: none;
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items: center;
     position: relative;
@@ -135,13 +180,13 @@
 .cont-fonc span {
     background-color: rgba(147, 86, 220, 1);
     border-radius: 50px;
-    width: 20px;
+    width: 25px;
     display: flex;
     justify-content: center;
     position: absolute;
     left: -10px;
     color: white;
-    height: 20px;
+    height: 25px;
     align-items: center;
 }
 
@@ -181,7 +226,11 @@
 }
 
 .resto {
-    background-color: gray;
+    background: rgba(246, 246, 246, 1);
+
+    .resto-titre {
+        padding: 5%;
+    }
 }
 
 
@@ -204,6 +253,7 @@ footer {
     color: white;
     margin-left: 15px;
     gap: 5px;
+
     a {
         text-decoration: none;
         color: white;

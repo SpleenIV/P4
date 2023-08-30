@@ -1,3 +1,24 @@
+/********* HEAD *********************/
+
+.head-logo {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.head-logo h1 {
+    text-decoration: none;
+    color: black;
+    width: 95%;
+}
+
+.fa-solid, .fas {
+    text-decoration: none;
+    color: black;
+}
+
+
 /************* MENU ****************/
 
 .bst {
@@ -13,6 +34,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+}
+
+.anime1 {
+    animation: spawn 1.8s 0.3s ease-out forwards;
+}
+.anime2 {
+    animation: spawn 1.8s 0.5s ease-out forwards;
+}
+.anime3 {
+    animation: spawn 1.8s 0.8s ease-out forwards;
 }
 
 .cont-boutton  {
@@ -72,4 +104,33 @@ i.fa-solid.fa-circle-check {
     transform: rotate(360deg);
     color: white;
     transition: transform 400ms, font-size 0ms;
+}
+
+.cont-menu h2 {
+    font-family: Shrikhand;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 700;
+    width: 90%;
+    margin: auto;
+}
+
+.plat h3 {
+    font-family: Shrikhand;
+    font-size: 45px;
+    font-weight: 400;
+    width: 90%;
+    margin: auto;
+}
+
+.green {
+    width: 70px;
+    height: 7px;
+    background-color: rgba(153, 226, 208, 1);
+    margin: 10px 5%;
+}
+
+.cont-boutton {
+    display: flex;
+    justify-content: center;
 }

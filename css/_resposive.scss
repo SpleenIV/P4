@@ -1,0 +1,63 @@
+@media (min-width: 1000px ) {
+
+/*********** HEAD *************/ 
+
+.head-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.head-logo h1 {
+    text-decoration: none;
+    color: black;
+    width: 95%;
+}
+
+.fa-solid, .fas {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/********* FONCTION ************/ 
+    .head-fonc {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .fonction {
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+    }
+
+/*****************restaurant ******************/
+    .cont-resto {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .link-resto {
+        width: 49%;
+    }
+/************** FOOTER ***********/
+    .foot {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .img-footer {
+        width: 15%;
+        margin-left: 15px;
+        margin-top: 0;
+    }
+
+    .ul-footer {
+        flex-direction: row;
+    }
+/******** BOUTON *****************/
+}
