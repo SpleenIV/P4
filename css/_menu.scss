@@ -26,8 +26,31 @@
 }
 
 .cont-menu {
-    background-color: gray;
-    /* margin-top: -20px; */
+    background: rgba(246, 246, 246, 1);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+    position: relative;
+    border-radius: 50px 50px 0 0;
+
+    .fa-regular, .fa-heart {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 35px;
+        font-style: italic;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+}
+.arrow-left {
+    position: absolute;
+    left: 10px;
 }
 
 .menu {
@@ -53,15 +76,13 @@
 }
 
 .cont-anime {
-    /* display: flex; */
     background-color: white;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
-    /* padding: 10px; */
     margin-bottom: 15px;
-    width: 90%;
-    height: 80px;
+    width: 100%;
+    height: 95px;
 
     &:hover > .menu-anime {
         width: 10%;
@@ -85,6 +106,27 @@
     margin-bottom: 15px;
     width: 100%;
     align-items: end;
+    overflow: hidden;
+
+    h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 50%;
+        white-space: nowrap;
+    }
+
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+        .menu-titre {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
 }
 
 
@@ -106,31 +148,29 @@ i.fa-solid.fa-circle-check {
     transition: transform 400ms, font-size 0ms;
 }
 
-.cont-menu h2 {
-    font-family: Shrikhand;
-    font-size: 45px;
-    font-style: italic;
-    font-weight: 700;
-    width: 90%;
-    margin: auto;
-}
 
 .plat h3 {
-    font-family: Shrikhand;
-    font-size: 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
     font-weight: 400;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
 .green {
-    width: 70px;
-    height: 7px;
+    width: 15%;
+    height: 10px;
     background-color: rgba(153, 226, 208, 1);
-    margin: 10px 5%;
+    margin: 10px 0%;
 }
 
 .cont-boutton {
     display: flex;
     justify-content: center;
+}
+
+/*********** Bouton ***************/
+
+.btn {
+    padding: 20px 70px;
 }

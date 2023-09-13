@@ -1,3 +1,7 @@
+html {
+    min-width: 320px;
+}
+
 .head-logo {
     h1 {
         padding: 15px;
@@ -100,7 +104,9 @@
     justify-content: center;
     color: rgba(255, 255, 255, 1);
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    margin-top: 20px;
+    margin-top: 75px;
+    transform: scale(1);
+    font-family: 'Roboto', sans-serif;
 }
 
 .cont-logo .fa-regular {
@@ -108,7 +114,6 @@
     border-color: black;
     border-width: 50px;
     cursor: pointer;
-    padding: 1.85rem 3rem;
     transition: transform 400ms;
 
     &:hover {
@@ -122,7 +127,7 @@
 }
 
 i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store{
-    padding: 25px;
+    padding: 18px;
     color: black;
 
     i.fa-solid.fa-store {
@@ -132,11 +137,10 @@ i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store{
 }
 
 .icon {
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
+        a {
+            text-decoration: none;
+            color: black;
+        }
 }
 
 
@@ -161,19 +165,23 @@ i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store{
         justify-content: center;
         flex-direction: column;
         gap: 15px;
+        margin-left: 5px;
 }
 
 .cont-fonc {
     background-color: rgba(0, 0, 0, 0.15);
     cursor: pointer;
     border-radius: 30px;
-    width: 90%;
+    width: 95%;
     border: none;
     height: 70px;
     display: flex;
     align-items: center;
     position: relative;
     box-shadow: 0px 9px 8px 5px rgba(0,0,0,0.4);
+    p {
+        font-size: 0.75em;
+    }
 }
 
 
@@ -201,6 +209,7 @@ i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store{
 
 .card-resto {
     width: 100%;
+    position: relative;
 }
 
 .cont-text-logo {
@@ -215,6 +224,7 @@ i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store{
     width: 90%;
     background-color: white;
     border-radius: 25px;
+    margin-bottom: 35px;
 }
 
 .cont-resto {
@@ -229,8 +239,21 @@ i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store{
     background: rgba(246, 246, 246, 1);
 
     .resto-titre {
-        padding: 5%;
+        padding: 10px;
+        margin-left: 15px;
     }
+}
+
+/************ NOUVEAU *************/
+
+.cont-resto span{
+    position: absolute;
+    color: rgba(0, 135, 102, 1);
+    background-color: rgba(153, 226, 208, 1);
+    top: 10px;
+    right: 23px;
+    padding: 10px 20px;
+    font-size: 14px;
 }
 
 
@@ -238,24 +261,29 @@ i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store{
 
 footer {
     background-color: #353535;
+    height: 10em;
 }
 
 .img-footer {
-    width: 30%;
-    margin-left: 15px;
+    width: 35%;
     margin-top: 15px;
     filter: invert(1);
+    padding: 15px;
 }
 
 .ul-footer {
     display: flex;
     flex-direction: column;
-    color: white;
     margin-left: 15px;
-    gap: 5px;
+    gap: 8px;
+    width: 80%;
 
     a {
         text-decoration: none;
         color: white;
+        .fa-solid {
+            color: white;
+            margin-right: 5px;
+        }
     }
 }

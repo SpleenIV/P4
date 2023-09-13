@@ -52,6 +52,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  min-width: 320px;
+}
+
 .head-logo h1 {
   padding: 15px;
 }
@@ -148,7 +152,9 @@ table {
   justify-content: center;
   color: rgb(255, 255, 255);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  margin-top: 20px;
+  margin-top: 75px;
+  transform: scale(1);
+  font-family: "Roboto", sans-serif;
 }
 
 .cont-logo .fa-regular {
@@ -157,7 +163,6 @@ table {
   border-color: black;
   border-width: 50px;
   cursor: pointer;
-  padding: 1.85rem 3rem;
   transition: transform 400ms;
 }
 .cont-logo .fa-regular:hover {
@@ -170,7 +175,7 @@ table {
 }
 
 i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store {
-  padding: 25px;
+  padding: 18px;
   color: black;
 }
 i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-solid.fa-store, i.fa-solid.fa-store i.fa-solid.fa-store {
@@ -200,19 +205,23 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
   justify-content: center;
   flex-direction: column;
   gap: 15px;
+  margin-left: 5px;
 }
 
 .cont-fonc {
   background-color: rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-radius: 30px;
-  width: 90%;
+  width: 95%;
   border: none;
   height: 70px;
   display: flex;
   align-items: center;
   position: relative;
   box-shadow: 0px 9px 8px 5px rgba(0, 0, 0, 0.4);
+}
+.cont-fonc p {
+  font-size: 0.75em;
 }
 
 .cont-fonc span {
@@ -239,6 +248,7 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
 
 .card-resto {
   width: 100%;
+  position: relative;
 }
 
 .cont-text-logo {
@@ -253,6 +263,7 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
   width: 90%;
   background-color: white;
   border-radius: 25px;
+  margin-bottom: 35px;
 }
 
 .cont-resto {
@@ -267,31 +278,48 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
   background: rgb(246, 246, 246);
 }
 .resto .resto-titre {
-  padding: 5%;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+/************ NOUVEAU *************/
+.cont-resto span {
+  position: absolute;
+  color: rgb(0, 135, 102);
+  background-color: rgb(153, 226, 208);
+  top: 10px;
+  right: 23px;
+  padding: 10px 20px;
+  font-size: 14px;
 }
 
 /******************* FOOTER ********************/
 footer {
   background-color: #353535;
+  height: 10em;
 }
 
 .img-footer {
-  width: 30%;
-  margin-left: 15px;
+  width: 35%;
   margin-top: 15px;
   filter: invert(1);
+  padding: 15px;
 }
 
 .ul-footer {
   display: flex;
   flex-direction: column;
-  color: white;
   margin-left: 15px;
-  gap: 5px;
+  gap: 8px;
+  width: 80%;
 }
 .ul-footer a {
   text-decoration: none;
   color: white;
+}
+.ul-footer a .fa-solid {
+  color: white;
+  margin-right: 5px;
 }
 
 /********* HEAD *********************/
@@ -319,8 +347,30 @@ footer {
 }
 
 .cont-menu {
-  background-color: gray;
-  /* margin-top: -20px; */
+  background: rgb(246, 246, 246);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  margin-top: -60px;
+  position: relative;
+  border-radius: 50px 50px 0 0;
+}
+.cont-menu .fa-regular, .cont-menu .fa-heart {
+  font-size: 35px;
+}
+.cont-menu h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 10px;
 }
 
 .menu {
@@ -348,15 +398,13 @@ footer {
 }
 
 .cont-anime {
-  /* display: flex; */
   background-color: white;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
-  /* padding: 10px; */
   margin-bottom: 15px;
-  width: 90%;
-  height: 80px;
+  width: 100%;
+  height: 95px;
 }
 .cont-anime:hover > .menu-anime {
   width: 10%;
@@ -376,6 +424,25 @@ footer {
   margin-bottom: 15px;
   width: 100%;
   align-items: end;
+  overflow: hidden;
+}
+.titre-prix h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 50%;
+  white-space: nowrap;
+}
+.titre-prix p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.titre-prix .menu-titre {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .menu-anime {
@@ -396,33 +463,29 @@ i.fa-solid.fa-circle-check {
   transition: transform 400ms, font-size 0ms;
 }
 
-.cont-menu h2 {
-  font-family: Shrikhand;
-  font-size: 45px;
-  font-style: italic;
-  font-weight: 700;
-  width: 90%;
-  margin: auto;
-}
-
 .plat h3 {
-  font-family: Shrikhand;
-  font-size: 45px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
   font-weight: 400;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
 .green {
-  width: 70px;
-  height: 7px;
+  width: 15%;
+  height: 10px;
   background-color: rgb(153, 226, 208);
-  margin: 10px 5%;
+  margin: 10px 0%;
 }
 
 .cont-boutton {
   display: flex;
   justify-content: center;
+}
+
+/*********** Bouton ***************/
+.btn {
+  padding: 20px 70px;
 }
 
 /***** Key  ****/
@@ -450,51 +513,114 @@ i.fa-solid.fa-circle-check {
 @media (min-width: 1000px) {
   /*********** HEAD *************/
   .head-logo {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
+    justify-content: center;
   }
   .head-logo h1 {
-    text-decoration: none;
-    color: black;
-    width: 95%;
+    width: 65%;
+    height: 90px;
+    display: flex;
   }
-  .fa-solid, .fas {
-    text-decoration: none;
-    color: black;
+  .cont-link {
+    padding: 30px;
+  }
+  .cont-link span {
+    height: 75px;
+    font-size: 45px;
+  }
+  .cont-link p {
+    font-size: 20px;
+  }
+  .cont-link .btn {
+    margin-top: 40px;
   }
   /********* FONCTION ************/
+  .img-menue {
+    height: 353px;
+  }
+  .img-menue .bst {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
   .head-fonc {
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+  }
+  .head-fonc h2 {
+    padding: 30px;
+    font-size: 30px;
+    margin-left: 155px;
   }
   .fonction {
     flex-direction: row;
-    width: 95%;
+    width: 75%;
     margin: auto;
   }
+  .cont-fonc {
+    width: 95%;
+    height: 70px;
+    margin-right: 15px;
+  }
+  .cont-fonc span {
+    border-radius: 50px;
+    width: 25px;
+    left: -12;
+    height: 25px;
+  }
   /*****************restaurant ******************/
+  .resto .resto-titre {
+    padding: 25px;
+    font-size: 30px;
+    margin-left: 25px;
+  }
+  .cont-menu {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cont-menu h2 {
+    width: auto;
+    margin: auto;
+  }
+  .cont-menu h2 i {
+    margin-left: 15px;
+  }
   .cont-resto {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: none;
+    margin-top: none;
   }
   .link-resto {
-    width: 49%;
+    width: 40%;
+    margin-left: 90px;
+    margin-bottom: 40px;
   }
   /************** FOOTER ***********/
   .foot {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 30px;
+    height: 5em;
   }
   .img-footer {
-    width: 15%;
-    margin-left: 15px;
-    margin-top: 0;
+    margin-top: 35px;
+    padding: 15px;
+    width: 10%;
   }
   .ul-footer {
+    display: flex;
     flex-direction: row;
+    gap: 20px;
+    width: 80%;
+    margin-top: 35px;
+    justify-content: end;
+  }
+  .ul-footer li:nth-child(2) {
+    margin-right: 35px;
   }
   /******** BOUTON *****************/
+}
+.btn:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
