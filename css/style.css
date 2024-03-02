@@ -98,7 +98,7 @@ html {
 .logo {
   display: flex;
   justify-content: center;
-  width: 40%;
+  width: 13em;
   margin: auto;
 }
 
@@ -114,14 +114,15 @@ html {
   height: 40px;
   margin: auto;
   padding: 10px;
+  font-weight: 500;
 }
 
 .location {
-  background-color: rgb(234, 234, 234);
+  background-color: #EAEAEA;
 }
 
 .cont-link {
-  background: rgb(246, 246, 246);
+  background: #F6F6F6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +176,7 @@ html {
 }
 
 i.fa-solid.fa-mobile-screen-button, i.fa-solid.fa-list, i.fa-solid.fa-store {
-  padding: 18px;
+  padding: 28px;
   color: black;
 }
 i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-solid.fa-store, i.fa-solid.fa-store i.fa-solid.fa-store {
@@ -196,6 +197,7 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
 .head-fonc h2 {
   padding: 14px;
   color: rgb(0, 0, 0);
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -205,10 +207,14 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
   justify-content: center;
   flex-direction: column;
   gap: 15px;
-  margin-left: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
 }
 
 .cont-fonc {
+  padding: 5px 20px 5px 0;
+  min-width: 30%;
   background-color: rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-radius: 30px;
@@ -225,7 +231,7 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
 }
 
 .cont-fonc span {
-  background-color: rgb(147, 86, 220);
+  background-color: #9356dc;
   border-radius: 50px;
   width: 25px;
   display: flex;
@@ -275,18 +281,20 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
 }
 
 .resto {
-  background: rgb(246, 246, 246);
+  background: #f6f6f6;
 }
 .resto .resto-titre {
   padding: 10px;
   margin-left: 15px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 /************ NOUVEAU *************/
 .cont-resto span {
   position: absolute;
-  color: rgb(0, 135, 102);
-  background-color: rgb(153, 226, 208);
+  color: #008766;
+  background-color: #99E2D0;
   top: 10px;
   right: 23px;
   padding: 10px 20px;
@@ -355,14 +363,17 @@ footer {
   position: relative;
   border-radius: 50px 50px 0 0;
 }
+.cont-menu .plat {
+  margin-top: 25px;
+}
 .cont-menu .fa-regular, .cont-menu .fa-heart {
   font-size: 35px;
 }
 .cont-menu h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 35px;
+  font-family: "Shrikhand";
+  font-size: 40px;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
   width: 95%;
@@ -416,7 +427,7 @@ footer {
 }
 
 .titrelogo {
-  width: auto;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -459,7 +470,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: green;
+  background: #99E2D0;
   transform: translateX(0px);
   transition: all 400ms;
 }
@@ -553,19 +564,20 @@ i.fa-solid.fa-circle-check {
   .head-fonc {
     margin-bottom: 100px;
     margin-top: 60px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .head-fonc h2 {
-    padding: 30px;
-    font-size: 30px;
-    margin-left: 155px;
+    padding: 0px;
   }
   .fonction {
     flex-direction: row;
-    width: 75%;
-    margin: auto;
+    justify-content: flex-start;
+    margin-left: 0;
   }
   .cont-fonc {
-    width: 95%;
+    width: auto;
     height: 70px;
     margin-right: 15px;
   }
@@ -576,10 +588,18 @@ i.fa-solid.fa-circle-check {
     height: 25px;
   }
   /*****************restaurant ******************/
+  .resto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 5% 0 5%;
+  }
+  .resto img {
+    height: 13em;
+  }
   .resto .resto-titre {
-    padding: 25px;
-    font-size: 30px;
-    margin-left: 25px;
+    padding: 0;
+    margin-left: 0;
   }
   .cont-menu {
     width: 70%;
@@ -596,13 +616,16 @@ i.fa-solid.fa-circle-check {
   .cont-resto {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: none;
     margin-top: none;
+    gap: 4%;
+    width: 100%;
   }
   .link-resto {
-    width: 40%;
-    margin-left: 90px;
+    width: 48%;
     margin-bottom: 40px;
+  }
+  .titrelogo {
+    width: auto;
   }
   /************** FOOTER ***********/
   .foot {

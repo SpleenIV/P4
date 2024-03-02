@@ -40,22 +40,24 @@
     .head-fonc {
         margin-bottom: 100px;
         margin-top: 60px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
 
         h2 {
-            padding: 30px;
-            font-size: 30px;
-            margin-left: 155px;
+            padding: 0px;
+            
         }
     }
 
     .fonction {
         flex-direction: row;
-        width: 75%;
-        margin: auto;
+        justify-content: flex-start;
+        margin-left: 0;
     }
 
     .cont-fonc {
-        width: 95%;
+        width: auto;
         height: 70px;
         margin-right: 15px;
 
@@ -64,16 +66,23 @@
             width: 25px;
             left: -12;
             height: 25px;
+           
         }
     }
 
 /*****************restaurant ******************/
 
     .resto {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 5% 0 5%;
+        img {
+            height: 13em;
+        }
         .resto-titre {
-            padding: 25px;
-            font-size: 30px;
-            margin-left: 25px;
+            padding: 0;
+            margin-left: 0;
         }
     }
     .cont-menu {
@@ -91,14 +100,17 @@
     .cont-resto {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: none;
         margin-top: none;
+        gap: 4%;
+        width: 100%;
     }
 
     .link-resto {
-        width: 40%;
-        margin-left: 90px;
+        width: 48%;
         margin-bottom: 40px;
+    }
+    .titrelogo {
+        width: auto;
     }
 
 /************** FOOTER ***********/
