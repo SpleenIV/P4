@@ -199,6 +199,7 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
   color: rgb(0, 0, 0);
   font-size: 40px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .fonction {
@@ -288,6 +289,7 @@ i.fa-solid.fa-mobile-screen-button i.fa-solid.fa-store, i.fa-solid.fa-list i.fa-
   margin-left: 15px;
   font-size: 40px;
   font-weight: 700;
+  margin-bottom: 25px;
 }
 
 /************ NOUVEAU *************/
